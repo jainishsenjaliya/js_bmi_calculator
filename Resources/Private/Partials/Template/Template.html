@@ -1,0 +1,55 @@
+<f:form class="form-horizontal" id="bmi-calculation" action="bmi" onsubmit="return BmiValidate(this.id);">
+
+	<h2>
+		<f:translate key='tx_jsbmicalculator_domain_model_bmi'/>
+	</h2>
+
+	<div class="form-group">
+		<label class="col-sm-3" for="weight">
+			<f:translate key='tx_jsbmicalculator_domain_model_bmi.label.weight'/> <f:translate key='tx_jsbmicalculator_domain_model_bmi.label.weight.type.kg'/>:
+		</label>
+		<div class="col-sm-9">
+			<f:form.textfield type="text" name="weight" property="weight" value="{data.value.weight}"
+			additionalAttributes="{class:'form-control validate weight', placeholder:'<f:translate key=\'tx_jsbmicalculator_domain_model_bmi.label.weight\' />', mendatory_message:'<f:translate key=\'tx_jsbmicalculator_domain_model_bmi.validate.blank_weight\' />'}" />
+		</div>
+	</div>
+
+	<div class="form-group">
+		<label class="col-sm-3" for="size">
+			<f:translate key='tx_jsbmicalculator_domain_model_bmi.label.height'/> <f:translate key='tx_jsbmicalculator_domain_model_bmi.label.height.type.cm'/>:
+		</label>
+		<div class="col-sm-9">
+			<f:form.textfield type="text" name="height" property="height" value="{data.value.height}" additionalAttributes="{class:'form-control validate height', placeholder:'<f:translate key=\'tx_jsbmicalculator_domain_model_bmi.label.height\' />', mendatory_message:'<f:translate key=\'tx_jsbmicalculator_domain_model_bmi.validate.blank_height\' />'}" />
+		</div>
+	</div>
+
+	<div class="form-group">
+		<div class="col-sm-offset-3 col-sm-9">
+			<f:form.submit value="<f:translate key='tx_jsbmicalculator_domain_model_bmi.label.submit'/>" class="btn btn-default" name="calculate" />
+		</div>
+	</div>
+
+</f:form>
+
+<f:if condition="{data.success}=='1'">
+
+	<div class="bmi-result">
+		<h2><f:translate key='tx_jsbmicalculator_domain_model_bmi.label.evaluation'/></h2>
+		
+		<div class="form-group result">
+			<div class="col-sm-9">
+				<strong>
+					<f:translate key='tx_jsbmicalculator_domain_model_bmi.label.your_bmi_is'/> : 
+				</strong>{data.BMI.value}
+			</div>
+		</div>
+		<f:if condition="{data.BMI.result}">
+			<div class="form-group">
+				<div class="col-sm-9">
+					<f:translate key='tx_jsbmicalculator_domain_model_bmi.label.evaluation.{data.BMI.result}'/>
+				</div>
+			</div>
+		</f:if>
+	</div>
+
+</f:if>

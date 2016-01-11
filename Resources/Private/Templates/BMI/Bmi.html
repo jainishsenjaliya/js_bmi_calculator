@@ -1,0 +1,14 @@
+<f:layout name='Default'/>
+
+<f:section name='main'>
+
+	<f:if condition="{template}==1">
+		<f:then>
+			<f:render partial="Template/Template" arguments="{template:template,data:result,settings:settings}" />
+		</f:then>
+		<f:else>
+			<f:render partial="Error/Error" arguments="{error:template}" />
+		</f:else>
+	</f:if>
+
+</f:section>

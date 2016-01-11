@@ -1,0 +1,93 @@
+/*
+ *  (c) 2015 Jainish Senjaliya <jainishsenjaliya@gmail.com>
+ *  All rights reserved
+ *  Basic Layout 
+*/
+
+.tx-js-bmi-calculator {
+	font-family:Arial;
+	max-width: 700px;
+	float:left;
+	padding-top:20px;
+}
+
+.tx-js-bmi-calculator .form-group {
+	margin: 0 -15px 15px;
+	clear: both;
+}
+
+.tx-js-bmi-calculator .col-sm-3, 
+.tx-js-bmi-calculator .col-sm-9 {
+	min-height: 1px;
+	padding:0 15px;
+	position: relative;
+}
+
+.tx-js-bmi-calculator .col-sm-3 {
+	width: 160px;
+	float: left;
+}
+
+.tx-js-bmi-calculator .col-sm-9 {
+	width: 500px;
+	float: left;
+}
+
+.tx-js-bmi-calculator .col-sm-offset-3 {
+	margin-left: 190px;;
+}
+
+.tx-js-bmi-calculator .form-group label {
+	font-size: 14px;
+	margin-bottom: 5px;
+	padding-top: 7px;
+	text-align: right;
+	font-weight: bold;
+}
+
+.tx-js-bmi-calculator .form-control {
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+	color: #555;
+	display: block;
+	font-size: 14px;
+	height: 25px;
+	line-height: 1.42857;
+	padding: 6px 12px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.tx-js-bmi-calculator .form-control:focus{
+	border-color: #666666;
+	outline:0;
+}
+
+.tx-js-bmi-calculator .form-control.error{
+	border-color: red;
+}
+
+.tx-js-bmi-calculator .btn {
+	-moz-user-select: none;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857;
+	margin-bottom: 0;
+	padding: 6px 12px;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+.tx-js-bmi-calculator .btn-default {
+	background-color: #fff;
+	border-color: #ccc;
+	color: #333;
+}

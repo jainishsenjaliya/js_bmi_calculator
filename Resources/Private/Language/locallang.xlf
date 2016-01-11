@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-12-31T18:38:22Z" product-name="js_bmi_calculator">
+		<header/>
+		<body>
+			<trans-unit id="tx_jsbmicalculator_domain_model_bmi">
+				<source>BMI Calculator</source>
+			</trans-unit>
+			<trans-unit id="tx_jsbmicalculator_domain_model_bmi.error.">
+				<source>Something missing while configuration</source>
+			</trans-unit>
+			<trans-unit id="tx_jsbmicalculator_domain_model_bmi.errors.include_template">
+				<source>Are you sure that you have included the "Main" static template?</source>
+			</trans-unit>
+			<trans-unit id="tx_jsbmicalculator_domain_model_bmi.label.weight">
+				<source>Weight</source>
+			</trans-unit>
+			<trans-unit id="tx_jsbmicalculator_domain_model_bmi.label.weight.type.kg">
+				<source>(in kg)</source>
+			</trans-unit>
+			<trans-unit id="tx_jsbmicalculator_domain_model_bmi.label.height">
+				<source>Height</source>
+			</trans-unit>
+			<trans-unit id="tx_jsbmicalculator_domain_model_bmi.label.height.type.cm">
+				<source>(in cm)</source>
+			</trans-unit>
+			<trans-unit id="tx_jsbmicalculator_domain_model_bmi.label.submit">
+				<source>Calculate BMI</source>
+			</trans-unit>
+			<trans-unit id="tx_jsbmicalculator_domain_model_bmi.label.evaluation">
+				<source>BMI evaluation</source>
+			</trans-unit>
+			<trans-unit id="tx_jsbmicalculator_domain_model_bmi.label.your_bmi_is">
+				<source>Your BMI is</source>
+			</trans-unit>
+			<trans-unit id="tx_jsbmicalculator_domain_model_bmi.label.evaluation.underweight">
+				<source>Under Weight</source>
+			</trans-unit>
+			<trans-unit id="tx_jsbmicalculator_domain_model_bmi.label.evaluation.normalweight">
+				<source>Normal weight</source>
+			</trans-unit>
+			<trans-unit id="tx_jsbmicalculator_domain_model_bmi.label.evaluation.overweight">
+				<source>Over Weight</source>
+			</trans-unit>
+			<trans-unit id="tx_jsbmicalculator_domain_model_bmi.label.evaluation.obesity">
+				<source>Obesity</source>
+			</trans-unit>
+			<trans-unit id="tx_jsbmicalculator_domain_model_bmi.validate.blank_height">
+				<source>Height cannot be blank!</source>
+			</trans-unit>
+			<trans-unit id="tx_jsbmicalculator_domain_model_bmi.validate.blank_weight">
+				<source>Weight cannot be blank!</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

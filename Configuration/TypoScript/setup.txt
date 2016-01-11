@@ -1,0 +1,64 @@
+
+plugin.tx_jsbmicalculator {
+	view {
+		templateRootPath = {$plugin.tx_jsbmicalculator.view.templateRootPath}
+		partialRootPath = {$plugin.tx_jsbmicalculator.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_jsbmicalculator.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_jsbmicalculator.persistence.storagePid}
+	}
+	features {
+		# uncomment the following line to enable the new Property Mapper.
+		# rewrittenPropertyMapper = 1
+	}
+}
+
+plugin.tx_jsbmicalculator._CSS_DEFAULT_STYLE (
+	textarea.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	input.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	.tx-js-bmi-calculator table {
+		border-collapse:separate;
+		border-spacing:10px;
+	}
+
+	.tx-js-bmi-calculator table th {
+		font-weight:bold;
+	}
+
+	.tx-js-bmi-calculator table td {
+		vertical-align:top;
+	}
+
+	.typo3-messages .message-error {
+		color:red;
+	}
+
+	.typo3-messages .message-ok {
+		color:green;
+	}
+
+)
+
+## EXTENSION BUILDER DEFAULTS END TOKEN - Everything BEFORE this line is overwritten with the defaults of the extension builder
+
+plugin.tx_jsbmicalculator{
+	settings{
+		configuration	= 1
+		underweight		= 18.5
+		normalweight	= 24.9
+		overweight		= 29.9
+		obesity			= 30
+	}
+}
+
+config.tx_jsbmicalculator.features.skipDefaultArguments = 1
+plugin.tx_jsbmicalculator.features.skipDefaultArguments = 1
