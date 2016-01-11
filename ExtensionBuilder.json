@@ -60,7 +60,7 @@
             "sourceLanguage": "en",
             "state": "stable",
             "targetVersion": "6.2",
-            "version": "1.0.0"
+            "version": "1.0.1"
         },
         "extensionKey": "js_bmi_calculator",
         "name": "BMI Calculator",
@@ -90,7 +90,7 @@
 
     ],
     "log": {
-        "last_modified": "2015-12-31 06:38",
+        "last_modified": "2015-12-31 06:00",
         "extension_builder_version": "6.2.0",
         "be_user": " (1)"
     }

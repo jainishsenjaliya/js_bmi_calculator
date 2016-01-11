@@ -78,4 +78,5 @@ class BMIController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController {
 		// Include Additional Data
 		$this->bMIService->includeAdditionalData($this->settings);
 	}
+
 }

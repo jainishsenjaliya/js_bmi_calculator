@@ -53,10 +53,6 @@ plugin.tx_jsbmicalculator._CSS_DEFAULT_STYLE (
 plugin.tx_jsbmicalculator{
 	settings{
 		configuration	= 1
-		underweight		= 18.5
-		normalweight	= 24.9
-		overweight		= 29.9
-		obesity			= 30
 	}
 }
 

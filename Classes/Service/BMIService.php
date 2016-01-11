@@ -41,10 +41,10 @@ class BMIService implements \TYPO3\CMS\Core\SingletonInterface {
 	function getBMICalculation($data, $settings)
 	{
 
-		$underweight	= $this->getTrim($settings['underweight']); 
-		$normalweight	= $this->getTrim($settings['normalweight']); 
-		$overweight		= $this->getTrim($settings['overweight']); 
-		$obesity		= $this->getTrim($settings['obesity']);
+		$underweight	= $this->getTrim($settings['flexform']['underweight']); 
+		$normalweight	= $this->getTrim($settings['flexform']['normalweight']); 
+		$overweight		= $this->getTrim($settings['flexform']['overweight']); 
+		$obesity		= $this->getTrim($settings['flexform']['obesity']);
 
 		$height = $this->getTrim($data['height']);
 		$weight = $this->getTrim($data['weight']);
