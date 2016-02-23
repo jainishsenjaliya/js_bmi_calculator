@@ -29,7 +29,8 @@ namespace JS\JsBmiCalculator\Domain\Model;
 /**
  * BMI
  */
-class BMI extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
+class BMI extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
+{
 
-	
+    
 }

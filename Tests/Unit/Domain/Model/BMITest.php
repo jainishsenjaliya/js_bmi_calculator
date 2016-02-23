@@ -5,7 +5,7 @@ namespace JS\JsBmiCalculator\Tests\Unit\Domain\Model;
 /***************************************************************
  *  Copyright notice
  *
- *  (c) 2015 Jainish Senjaliya <jainishsenjaliya@gmail.com>
+ *  (c) 2016 Jainish Senjaliya <jainishsenjaliya@gmail.com>
  *
  *  All rights reserved
  *
@@ -34,24 +34,28 @@ namespace JS\JsBmiCalculator\Tests\Unit\Domain\Model;
  *
  * @author Jainish Senjaliya <jainishsenjaliya@gmail.com>
  */
-class BMITest extends \TYPO3\CMS\Core\Tests\UnitTestCase {
+class BMITest extends \TYPO3\CMS\Core\Tests\UnitTestCase
+{
 	/**
 	 * @var \JS\JsBmiCalculator\Domain\Model\BMI
 	 */
 	protected $subject = NULL;
 
-	protected function setUp() {
+	public function setUp()
+	{
 		$this->subject = new \JS\JsBmiCalculator\Domain\Model\BMI();
 	}
 
-	protected function tearDown() {
+	public function tearDown()
+	{
 		unset($this->subject);
 	}
 
 	/**
 	 * @test
 	 */
-	public function dummyTestToNotLeaveThisFileEmpty() {
+	public function dummyTestToNotLeaveThisFileEmpty()
+	{
 		$this->markTestIncomplete();
 	}
 }

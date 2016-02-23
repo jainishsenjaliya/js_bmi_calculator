@@ -54,17 +54,19 @@
         "emConf": {
             "category": "plugin",
             "custom_category": "",
-            "dependsOn": "typo3 => 6.0.0 - 6.2.99",
+            "dependsOn": "typo3 => 6.0.0 - 7.6.99",
             "disableLocalization": false,
             "disableVersioning": false,
+            "skipGenerateDocumentationTemplate": false,
             "sourceLanguage": "en",
             "state": "stable",
-            "targetVersion": "6.2",
-            "version": "1.0.1"
+            "targetVersion": "7.6.0-7.6.99",
+            "version": "1.0.2"
         },
         "extensionKey": "js_bmi_calculator",
         "name": "BMI Calculator",
         "originalExtensionKey": "js_bmi_calculator",
+        "originalVendorName": "JS",
         "persons": [
             {
                 "company": "",
@@ -90,8 +92,8 @@
 
     ],
     "log": {
-        "last_modified": "2015-12-31 06:00",
-        "extension_builder_version": "6.2.0",
+        "last_modified": "2016-02-19 06:13",
+        "extension_builder_version": "7.6.0",
         "be_user": " (1)"
     }
 }

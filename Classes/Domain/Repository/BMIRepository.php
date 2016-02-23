@@ -29,7 +29,8 @@ namespace JS\JsBmiCalculator\Domain\Repository;
 /**
  * The repository for BMIs
  */
-class BMIRepository extends \TYPO3\CMS\Extbase\Persistence\Repository {
+class BMIRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
+{
 
-	
+    
 }

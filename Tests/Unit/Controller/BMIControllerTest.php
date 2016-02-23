@@ -3,7 +3,7 @@ namespace JS\JsBmiCalculator\Tests\Unit\Controller;
 /***************************************************************
  *  Copyright notice
  *
- *  (c) 2015 Jainish Senjaliya <jainishsenjaliya@gmail.com>
+ *  (c) 2016 Jainish Senjaliya <jainishsenjaliya@gmail.com>
  *  			
  *  All rights reserved
  *
@@ -29,18 +29,21 @@ namespace JS\JsBmiCalculator\Tests\Unit\Controller;
  *
  * @author Jainish Senjaliya <jainishsenjaliya@gmail.com>
  */
-class BMIControllerTest extends \TYPO3\CMS\Core\Tests\UnitTestCase {
+class BMIControllerTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
+{
 
 	/**
 	 * @var \JS\JsBmiCalculator\Controller\BMIController
 	 */
 	protected $subject = NULL;
 
-	protected function setUp() {
+	public function setUp()
+	{
 		$this->subject = $this->getMock('JS\\JsBmiCalculator\\Controller\\BMIController', array('redirect', 'forward', 'addFlashMessage'), array(), '', FALSE);
 	}
 
-	protected function tearDown() {
+	public function tearDown()
+	{
 		unset($this->subject);
 	}
 

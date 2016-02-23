@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-02-19T18:13:44Z" product-name="js_bmi_calculator">
+		<header/>
+		<body>
+						
+			<trans-unit id="settings.generalSetting">
+				<source>BMI Measurement Settings</source>
+			</trans-unit>
+						
+			<trans-unit id="settings.flexform.underweight">
+				<source>Under Weight</source>
+			</trans-unit>
+			
+			<trans-unit id="settings.flexform.normalweight">
+				<source>Normal Weight</source>
+			</trans-unit>
+			
+			<trans-unit id="settings.flexform.overweight">
+				<source>Over Weight</source>
+			</trans-unit>
+
+			<trans-unit id="settings.flexform.obesity">
+				<source>Obesity</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

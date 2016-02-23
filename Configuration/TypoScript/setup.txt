@@ -1,16 +1,12 @@
 
-plugin.tx_jsbmicalculator {
+plugin.tx_jsbmicalculator_bmi {
 	view {
-		templateRootPath = {$plugin.tx_jsbmicalculator.view.templateRootPath}
-		partialRootPath = {$plugin.tx_jsbmicalculator.view.partialRootPath}
-		layoutRootPath = {$plugin.tx_jsbmicalculator.view.layoutRootPath}
+		templateRootPaths.0 = {$plugin.tx_jsbmicalculator_bmi.view.templateRootPath}
+		partialRootPaths.0 = {$plugin.tx_jsbmicalculator_bmi.view.partialRootPath}
+		layoutRootPaths.0 = {$plugin.tx_jsbmicalculator_bmi.view.layoutRootPath}
 	}
 	persistence {
-		storagePid = {$plugin.tx_jsbmicalculator.persistence.storagePid}
-	}
-	features {
-		# uncomment the following line to enable the new Property Mapper.
-		# rewrittenPropertyMapper = 1
+		storagePid = {$plugin.tx_jsbmicalculator_bmi.persistence.storagePid}
 	}
 }
 

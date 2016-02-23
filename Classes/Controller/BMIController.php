@@ -1,6 +1,7 @@
 <?php
 namespace JS\JsBmiCalculator\Controller;
 
+use TYPO3\CMS\Core\Utility\GeneralUtility;
 /***************************************************************
  *
  *  Copyright notice
@@ -29,54 +30,48 @@ namespace JS\JsBmiCalculator\Controller;
 /**
  * BMIController
  */
-class BMIController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController {
+class BMIController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
+{
 
-	/**
-	 * bMIRepository
-	 *
-	 * @var \JS\JsBmiCalculator\Domain\Repository\BMIRepository
-	 * @inject
-	 */
-	protected $bMIRepository = NULL;
-
-	/**
-	 * bMIService
-	 *
-	 * @var \JS\JsBmiCalculator\Service\BMIService
-	 * @inject
-	 */
-	protected $bMIService = NULL;
-
-	/**
-	 * action bmi
-	 *
-	 * @return void
-	 */
-	public function bmiAction() {
-
-		$GLOBALS['TSFE']->set_no_cache();
-
-		$template = 1;
-
-		$result = array('value' => array('height' => '', 'weight' => ''));
-
-		$this->settings['fullURL'] = \TYPO3\CMS\Core\Utility\GeneralUtility::getIndpEnv('TYPO3_SITE_URL');
-		$this->settings['cObject'] = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance('tslib_cObj');
-		
-		// Configuration
-		$template = $this->bMIService->missingConfiguration($this->settings);
-		
-		if ($this->request->hasArgument('calculate')) {
-			$post = $this->request->getArguments();
-			$result = $this->bMIService->getBMICalculation($post, $this->settings);
-		}
-		
-		$this->view->assign('template', $template);
-		$this->view->assign('result', $result);
-		$this->view->assign('settings', $this->settings);
-		
-		// Include Additional Data
-		$this->bMIService->includeAdditionalData($this->settings);
-	}
+    /**
+     * bMIRepository
+     *
+     * @var \JS\JsBmiCalculator\Domain\Repository\BMIRepository
+     * @inject
+     */
+    protected $bMIRepository = NULL;
+    
+    /**
+     * bMIService
+     *
+     * @var \JS\JsBmiCalculator\Service\BMIService
+     * @inject
+     */
+    protected $bMIService = NULL;
+    
+    /**
+     * action bmi
+     *
+     * @return void
+     */
+    public function bmiAction()
+    {
+        $GLOBALS['TSFE']->set_no_cache();
+        $template = 1;
+        $result = array('value' => array('height' => '', 'weight' => ''));
+        $this->settings['fullURL'] = GeneralUtility::getIndpEnv('TYPO3_SITE_URL');
+        $cObject = GeneralUtility::makeInstance('TYPO3\\CMS\\Extbase\\Object\\ObjectManager');
+        // Configuration
+        $template = $this->bMIService->missingConfiguration($this->settings);
+        if ($this->request->hasArgument('calculate')) {
+            $post = $this->request->getArguments();
+            $result = $this->bMIService->getBMICalculation($post, $this->settings);
+        }
+        $this->view->assign('template', $template);
+        $this->view->assign('result', $result);
+        $this->view->assign('settings', $this->settings);
+        // Include Additional Data
+        $this->bMIService->includeAdditionalData($this->settings);
+    }
 
 }
