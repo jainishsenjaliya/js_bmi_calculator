@@ -5,7 +5,7 @@ namespace JS\JsBmiCalculator\Tests\Unit\Domain\Model;
 /***************************************************************
  *  Copyright notice
  *
- *  (c) 2016 Jainish Senjaliya <jainishsenjaliya@gmail.com>
+ *  (c) 2015 Jainish Senjaliya <jainishsenjaliya@gmail.com>
  *
  *  All rights reserved
  *

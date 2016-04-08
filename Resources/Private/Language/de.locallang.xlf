@@ -1,55 +1,55 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2015-04-08T17:34:49Z" product-name="js_bmi_calculator">
+	<file source-language="de" datatype="plaintext" original="messages" date="2015-12-29T16:07:10Z" product-name="js_bmi_calculator">
 		<header/>
 		<body>
 			<trans-unit id="tx_jsbmicalculator_domain_model_bmi">
-				<source>BMI Calculator</source>
+				<target>BMI Rechner</target>
 			</trans-unit>
 			<trans-unit id="tx_jsbmicalculator_domain_model_bmi.error.">
-				<source>Something missing while configuration</source>
+				<target>Fehlt etwas, während Konfigurations</target>
 			</trans-unit>
 			<trans-unit id="tx_jsbmicalculator_domain_model_bmi.errors.include_template">
-				<source>Are you sure that you have included the "Main" static template?</source>
+				<target>Sind Sie sicher, dass Sie die "Main" statische Template haben sind enthalten?</target>
 			</trans-unit>
 			<trans-unit id="tx_jsbmicalculator_domain_model_bmi.label.weight">
-				<source>Weight</source>
+				<target>Gewicht</target>
 			</trans-unit>
 			<trans-unit id="tx_jsbmicalculator_domain_model_bmi.label.weight.type.kg">
-				<source>(in kg)</source>
+				<target>(in kg)</target>
 			</trans-unit>
 			<trans-unit id="tx_jsbmicalculator_domain_model_bmi.label.height">
-				<source>Height</source>
+				<target>Körpergröße</target>
 			</trans-unit>
 			<trans-unit id="tx_jsbmicalculator_domain_model_bmi.label.height.type.cm">
-				<source>(in cm)</source>
+				<target>(in cm)</target>
 			</trans-unit>
 			<trans-unit id="tx_jsbmicalculator_domain_model_bmi.label.submit">
-				<source>Calculate BMI</source>
+				<target>BMI berechnen</target>
 			</trans-unit>
 			<trans-unit id="tx_jsbmicalculator_domain_model_bmi.label.evaluation">
-				<source>BMI evaluation</source>
+				<target>BMI Auswertung</target>
 			</trans-unit>
 			<trans-unit id="tx_jsbmicalculator_domain_model_bmi.label.your_bmi_is">
-				<source>Your BMI is</source>
+				<target>Ihr BMI beträgt</target>
 			</trans-unit>
 			<trans-unit id="tx_jsbmicalculator_domain_model_bmi.label.evaluation.underweight">
-				<source>Under Weight</source>
+				<target>Untergewicht</target>
 			</trans-unit>
 			<trans-unit id="tx_jsbmicalculator_domain_model_bmi.label.evaluation.normalweight">
-				<source>Normal weight</source>
+				<target>Normalgewicht</target>
 			</trans-unit>
 			<trans-unit id="tx_jsbmicalculator_domain_model_bmi.label.evaluation.overweight">
-				<source>Over Weight</source>
+				<target>Übergewicht</target>
 			</trans-unit>
 			<trans-unit id="tx_jsbmicalculator_domain_model_bmi.label.evaluation.obesity">
-				<source>Obesity</source>
+				<target>Fettleibigkeit</target>
 			</trans-unit>
 			<trans-unit id="tx_jsbmicalculator_domain_model_bmi.validate.blank_height">
-				<source>Height cannot be blank!</source>
+				<target>Körpergröße darf nicht leer sein!</target>
 			</trans-unit>
 			<trans-unit id="tx_jsbmicalculator_domain_model_bmi.validate.blank_weight">
-				<source>Weight cannot be blank!</source>
+				<target>Gewicht darf nicht leer sein!</target>
 			</trans-unit>
 		</body>
 	</file>

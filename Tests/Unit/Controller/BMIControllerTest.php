@@ -3,7 +3,7 @@ namespace JS\JsBmiCalculator\Tests\Unit\Controller;
 /***************************************************************
  *  Copyright notice
  *
- *  (c) 2016 Jainish Senjaliya <jainishsenjaliya@gmail.com>
+ *  (c) 2015 Jainish Senjaliya <jainishsenjaliya@gmail.com>
  *  			
  *  All rights reserved
  *

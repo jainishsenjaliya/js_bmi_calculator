@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-12-29T16:07:10Z" product-name="js_bmi_calculator">
+		<header/>
+		<body>
+			<trans-unit id="plugin-title">
+				<source>BMI Calculator Measurement Settings</source>
+			</trans-unit>
+			
+			<trans-unit id="plugin-settings">
+				<source>Settings</source>
+			</trans-unit>
+			
+			<trans-unit id="plugin-value">
+				<source>Values</source>
+			</trans-unit>
+			
+			<trans-unit id="underWeight">
+				<source>Under Weight</source>
+			</trans-unit>
+
+			<trans-unit id="normalWeight">
+				<source>Normal Weight</source>
+			</trans-unit>
+			
+			<trans-unit id="overWeight">
+				<source>Over Weight</source>
+			</trans-unit>
+
+			<trans-unit id="obesity">
+				<source>Obesity</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

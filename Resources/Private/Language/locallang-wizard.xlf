@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-12-29T16:07:10Z" product-name="js_bmi_calculator">
+		<header/>
+		<body>
+			<trans-unit id="plugin-title">
+				<source>BMI Calculator</source>
+			</trans-unit>
+			<trans-unit id="plugin-description">
+				<source>The body mass index (BMI) or Quetelet index is a value derived from the mass (weight) and height of an individual.</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

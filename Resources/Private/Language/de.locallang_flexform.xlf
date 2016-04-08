@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2015-12-23T09:41:19Z" product-name="js_bmi_calculator">
+	<file source-language="de" datatype="plaintext" original="messages" date="2015-12-23T09:41:19Z" product-name="js_bmi_calculator">
 		<header/>
 		<body>
 						
 			<trans-unit id="settings.generalSetting">
-				<source>BMI Measurement Settings</source>
+				<target>BMI Messeinstellungen</target>
 			</trans-unit>
 						
 			<trans-unit id="settings.flexform.underweight">
-				<source>Under Weight</source>
+				<target>Untergewicht</target>
 			</trans-unit>
 			
 			<trans-unit id="settings.flexform.normalweight">
-				<source>Normal Weight</source>
+				<target>Normalgewicht</target>
 			</trans-unit>
 			
 			<trans-unit id="settings.flexform.overweight">
-				<source>Over Weight</source>
+				<target>Übergewicht</target>
 			</trans-unit>
 
 			<trans-unit id="settings.flexform.obesity">
-				<source>Obesity</source>
+				<target>Fettleibigkeit</target>
 			</trans-unit>
 
 		</body>
