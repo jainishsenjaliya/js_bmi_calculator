@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="de" datatype="plaintext" original="messages" date="2015-12-29T16:07:10Z" product-name="js_bmi_calculator">
+	<file source-language="de" datatype="plaintext" original="messages" date="2016-04-23T17:28:21Z" product-name="js_bmi_calculator">
 		<header/>
 		<body>
 			<trans-unit id="tx_jsbmicalculator_domain_model_bmi">
@@ -50,6 +50,12 @@
 			</trans-unit>
 			<trans-unit id="tx_jsbmicalculator_domain_model_bmi.validate.blank_weight">
 				<target>Gewicht darf nicht leer sein!</target>
+			</trans-unit>
+			<trans-unit id="tx_jsbmicalculator_domain_model_bmi.validate.valid_height">
+				<target>bitte geben Sie eine gültige Nummer in der Körpergröße!</target>
+			</trans-unit>
+			<trans-unit id="tx_jsbmicalculator_domain_model_bmi.validate.valid_weight">
+				<target>bitte geben Sie eine gültige Nummer in der Gewicht!</target>
 			</trans-unit>
 		</body>
 	</file>
