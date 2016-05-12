@@ -78,9 +78,19 @@ class BMIService implements \TYPO3\CMS\Core\SingletonInterface {
 			}
 
 			$success = 1;
+		
+		}else{
+
+			if($weight==""){
+				$error["blank_weight"] = "weight";
+			}
+
+			if($height==""){
+				$error["blank_height"] = "height";
+			}
 		}
 
-		return array("success"=>$success, "value"=>$value, "BMI"=>array("value"=>$BMI, 'result' => $result));
+		return array("success"=>$success, "value"=>$value, "error"=>$error, "BMI"=>array("value"=>$BMI, 'result' => $result));
 	}
 
  	/**

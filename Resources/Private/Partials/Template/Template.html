@@ -4,6 +4,10 @@
 		<f:translate key='tx_jsbmicalculator_domain_model_bmi'/>
 	</h2>
 
+	<f:if condition="{data.success}=='0'">
+		<f:render partial="Error/Validate" arguments="{errors:data.error}" />
+	</f:if>
+
 	<div class="form-group">
 		<label class="col-sm-3" for="weight">
 			<f:translate key='tx_jsbmicalculator_domain_model_bmi.label.weight'/> <f:translate key='tx_jsbmicalculator_domain_model_bmi.label.weight.type.kg'/>:

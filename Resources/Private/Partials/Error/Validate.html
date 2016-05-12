@@ -1,0 +1,11 @@
+<f:if condition="{errors}">
+	<div class="alert alert-danger">
+		<f:for each='{errors}' as='v' key='error'>
+			<div>
+			 	<span>
+					<f:translate key='tx_jsbmicalculator_domain_model_bmi.validate.{error}' />
+				</span>
+			</div>
+		</f:for>
+	</div>
+</f:if>

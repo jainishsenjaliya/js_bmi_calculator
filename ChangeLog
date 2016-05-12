@@ -1,4 +1,10 @@
-	
+
+2016-05-12  Jainish Senjaliya <jainishsenjaliya@gmail.com>
+
+	* Added server side validation.
+	* Compatibility with TYPO3 8.9.99
+	* Released version 2.0.3
+
 2016-04-23  Jainish Senjaliya <jainishsenjaliya@gmail.com>
 
 	* Modify client side validation
