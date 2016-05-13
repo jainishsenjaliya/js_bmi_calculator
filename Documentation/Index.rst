@@ -26,10 +26,10 @@ BMI Calculator
 		The body mass index (BMI) or Quetelet index is a value derived from the mass (weight) and height of an individual.
 
 	:Keywords:
-		comma,separated,list,of,keywords
+		BMI Calculator, BMI, Calculator, Body, Mass, Index, BMI-Rechner
 
 	:Copyright:
-		2015
+		2016
 
 	:Author:
 		Jainish Senjaliya
@@ -58,7 +58,5 @@ BMI Calculator
 	Administrator/Index
 	Configuration/Index
 	Developer/Index
-	KnownProblems/Index
-	ToDoList/Index
 	ChangeLog/Index
 	Links

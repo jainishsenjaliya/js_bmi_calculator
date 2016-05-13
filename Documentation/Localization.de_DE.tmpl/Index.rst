@@ -15,7 +15,7 @@
 .. only:: html
 
 	:Klassifikation:
-		extension_key
+		js_bmi_calculator
 
 	:Version:
 		|release|
@@ -24,19 +24,19 @@
 		de
 
 	:Beschreibung:
-		Geben Sie eine Beschreibung ein.
+		Der Body-Mass-Index (BMI) oder Quetelet-Index ist ein Wert aus der Masse (Gewicht) abgeleitet und Höhe eines einzelnen.
 
 	:Schlüsselwörter:
-		komma-getrennte,Liste,von,Schlüsselwörtern
+		BMI Rechner, BMI, Rechner
 
 	:Copyright:
-		###YEAR###
+		2016
 
 	:Autor:
-		###AUTHOR###
+		Jainish Senjaliya
 
 	:E-Mail:
-		author@example.com
+		jainishsenjaliya@gmail.com
 
 	:Lizenz:
 		Dieses Dokument wird unter der Open Publication License, siehe

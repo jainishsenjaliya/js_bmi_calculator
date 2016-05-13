@@ -11,22 +11,12 @@
 Introduction
 ============
 
+The body mass index (BMI) or Quetelet index is a value derived from the mass (weight) and height of an individual.
 
-.. _what-it-does:
-
-What does it do?
-----------------
-
-This chapter should give a brief overview of the extension. What does it do? What problems does it solve?
-Who is interested in this? Basically, this section includes everything people need to know to decide whether they
-should go on with this extension or not.
 
 .. important::
 
-   Please don't forget to repeat your extension's version number in the
-   :file:`Settings.yml` file, in the :code:`release` property. It will be
-   automatically picked up on the cover page by the :code:`|release|`
-   substitution.
+   Please don't forget include your jQuery library if not included in your project
 
 
 .. _screenshots:
@@ -34,13 +24,38 @@ should go on with this extension or not.
 Screenshots
 -----------
 
-This chapter should help people figure how the extension works. Remove it
-if not relevant.
+How the extension works in frontend
 
-.. figure:: ../Images/IntroductionPackage.png
+.. figure:: ../Images/BMICalculator.png
    :width: 500px
-   :alt: Introduction Package
+   :alt: BMI Calculator
 
-   Introduction Package just after installation (caption of the image)
+   BMI Calculator 
 
-   How the Frontend of the Introduction Package looks like just after installation (legend of the image)
+
+BMI Calculator Result
+
+.. figure:: ../Images/BMICalculatorResult.png
+   :width: 500px
+   :alt: BMI Calculator Result
+
+   BMI Calculator Result
+
+
+BMI Calculator Client side Validation
+
+.. figure:: ../Images/BMICalculatorClientValidation.png
+   :width: 500px
+   :alt: BMI Calculator Client Side Validation
+
+   BMI Calculator Client Side Validation
+
+
+BMI Calculator Result
+
+.. figure:: ../Images/BMICalculatorServerValidation.png
+   :width: 500px
+   :alt: BMI Calculator Server Side Validation
+
+   BMI Calculator Client Side Validation
+

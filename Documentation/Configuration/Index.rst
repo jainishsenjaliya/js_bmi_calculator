@@ -8,99 +8,59 @@
 
 .. _configuration:
 
-Configuration Reference
+TypoScript Reference
 =======================
 
-Technical information: Installation, Reference of TypoScript options,
-configuration options on system level, how to extend it, the technical
-details, how to debug it and so on.
-
-Language should be technical, assuming developer knowledge of TYPO3.
-Small examples/visuals are always encouraged.
-
-Target group: **Developers**
-
-
-.. _configuration-typoscript:
-
-TypoScript Reference
---------------------
-
-Possible subsections: Reference of TypoScript options.
-The construct below show the recommended structure for
-TypoScript properties listing and description.
-
-Properties should be listed in the order in which they
-are executed by your extension, but the first should be
-alphabetical for easier access.
-
-When detailing data types or standard TypoScript
-features, don't hesitate to cross-link to the TypoScript
-Reference as shown below. See the :file:`Settings.yml`
-file for the declaration of cross-linking keys.
-
-
-Properties
+Setup :
 ^^^^^^^^^^
 
-.. container:: ts-properties
+.. _ts-plugin-tx_jsbmicalculator-uri-css-BMI-path:
 
-	=========================== ===================================== ======================= ====================
-	Property                    Data type                             :ref:`t3tsref:stdwrap`  Default
-	=========================== ===================================== ======================= ====================
-	allWrap_                    :ref:`t3tsref:data-type-wrap`         yes                     :code:`<div>|</div>`
-	`subst\_elementUid`_        :ref:`t3tsref:data-type-boolean`      no                      0
-	wrapItemAndSub_             :ref:`t3tsref:data-type-wrap`
-	=========================== ===================================== ======================= ====================
+:typoscript:`plugin.tx_jsbmicalculator.uri.css.BMI.path = typo3conf/ext/js_bmi_calculator/Resources/Public/Css/Basic.css`
+
+Basic CSS layout path
 
 
-Property details
-^^^^^^^^^^^^^^^^
+.. _ts-plugin-tx_jsbmicalculator-uri-css-BMI-includeInFooter:
 
-.. only:: html
+:typoscript:`plugin.tx_jsbmicalculator.uri.css.BMI.includeInFooter = 1`
 
-	.. contents::
-		:local:
-		:depth: 1
+Include CSS file in footer section: If disable then CSS file will include in header section
 
 
-.. _ts-plugin-tx-extensionkey-stdwrap:
 
-allWrap
-"""""""
+.. _ts-plugin-tx_jsbmicalculator-uri-javascript-BMI-includeInFooter:
 
-:typoscript:`plugin.tx_extensionkey.allWrap =` :ref:`t3tsref:data-type-wrap`
+:typoscript:`plugin.tx_jsbmicalculator.uri.javascript.jQuery.path = typo3conf/ext/js_bmi_calculator/Resources/Public/Script/jquery-1.11.3.min.js`
 
-Wraps the whole item.
+jQuery Library Path
 
 
-.. _ts-plugin-tx-extensionkey-wrapitemandsub:
+.. _ts-plugin-tx_jsbmicalculator-uri-javascript-jQuery-include:
 
-wrapItemAndSub
-""""""""""""""
+:typoscript:`plugin.tx_jsbmicalculator.uri.javascript.jQuery.include = 1`
 
-:typoscript:`plugin.tx_extensionkey.wrapItemAndSub =` :ref:`t3tsref:data-type-wrap`
-
-Wraps the whole item and any submenu concatenated to it.
+Include jQuery Library
 
 
-.. _ts-plugin-tx-extensionkey-substelementUid:
+.. _ts-plugin-tx_jsbmicalculator-uri-javascript-jQuery-includeInFooter:
 
-subst_elementUid
-""""""""""""""""
+:typoscript:`plugin.tx_jsbmicalculator.uri.javascript.jQuery.includeInFooter = 1`
 
-:typoscript:`plugin.tx_extensionkey.subst_elementUid =` :ref:`t3tsref:data-type-boolean`
-
-If set, all appearances of the string ``{elementUid}`` in the total
-element html-code (after wrapped in allWrap_) are substituted with the
-uid number of the menu item. This is useful if you want to insert an
-identification code in the HTML in order to manipulate properties with
-JavaScript.
+Include jQuery Library in footer section: If disable then Javascript file will include in header section
 
 
-.. _configuration-faq:
 
-FAQ
----
 
-Possible subsection: FAQ
+.. _ts-plugin-tx_jsbmicalculator-uri-javascript-BMI-path:
+
+:typoscript:`plugin.tx_jsbmicalculator.uri.javascript.BMI.path = typo3conf/ext/js_bmi_calculator/Resources/Public/Script/Bmi.js
+
+Javascript Path for Validation
+
+
+.. _ts-plugin-tx_jsbmicalculator-uri-javascript-BMI-includeInFooter:
+
+:typoscript:`plugin.tx_jsbmicalculator.uri.javascript.BMI.includeInFooter = 1`
+
+Include Validation file in footer section: If disable then validation script file will include in header section

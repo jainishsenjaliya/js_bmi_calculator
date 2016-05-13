@@ -15,7 +15,7 @@
 .. only:: html
 
 	:Classification:
-		extension_key
+		js_bmi_calculator
 
 	:Version:
 		|release|
@@ -24,19 +24,19 @@
 		fr
 
 	:Description:
-		entrez une description.
+		L'indice de masse corporelle (IMC) ou indice de Quetelet est une valeur dérivée de la masse (poids) et de la hauteur d'un individu.
 
 	:Mots-clés:
-		list,mots-clés,séparés,par,virgules
+		calculateur d'IMC, calculateur, d'IMC
 
 	:Copyright:
-		###YEAR###
+		2016
 
 	:Auteur:
-		###AUTHOR###
+		Jainish Senjaliya
 
 	:E-mail:
-		author@example.com
+		jainishsenjaliya@gmail.com
 
 	:Licence:
 		Ce document est publié sous la licence de publication libre
