@@ -51,6 +51,3 @@ plugin.tx_jsbmicalculator{
 		configuration	= 1
 	}
 }
-
-config.tx_jsbmicalculator.features.skipDefaultArguments = 1
-plugin.tx_jsbmicalculator.features.skipDefaultArguments = 1

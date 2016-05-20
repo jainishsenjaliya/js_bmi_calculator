@@ -101,33 +101,37 @@ class BMIService implements \TYPO3\CMS\Core\SingletonInterface {
 	 */
 	function includeAdditionalData($settings)
 	{
-		$settings['javascript']['jQuery']['includeInFooter']= 1;
-		$settings['javascript']['BMI']['includeInFooter']	= 1;
-		$settings['css']['BMI']['includeInFooter']	= 1;
-
-		$jQueryLib = '<script src="typo3conf/ext/js_bmi_calculator/Resources/Public/Script/jquery-1.11.3.min.js" type="text/javascript"></script>';
-
-		if($settings['javascript']['jQuery']['includeInFooter']==1){
-			$GLOBALS['TSFE']->additionalFooterData['BMI.jQueryLib'] = $jQueryLib;
-		}else{
-			$GLOBALS['TSFE']->additionalHeaderData['BMI.jQueryLib'] = $jQueryLib;	
-		}
-
-		$additionalDataJS = '<script src="typo3conf/ext/js_bmi_calculator/Resources/Public/Script/Bmi.js" type="text/javascript"></script>';
-
-		if($settings['javascript']['BMI']['includeInFooter']==1){
-			$GLOBALS['TSFE']->additionalFooterData['BMIJS'] = $additionalDataJS;
-		}else{
-			$GLOBALS['TSFE']->additionalHeaderData['BMIJS'] = $additionalDataJS;	
-		}
-
+		if(!empty($settings['uri']['javascript']['jQuery']['path']) && $settings['uri']['javascript']['jQuery']['include']==1){
 			
-		$additionalDataCSS = '<link rel="stylesheet" href="typo3conf/ext/js_bmi_calculator/Resources/Public/Css/Basic.css" type="text/css" media="all" />';
+			$jQueryLib = '<script src="'.$settings['uri']['javascript']['jQuery']['path'].'" type="text/javascript"></script>';
 
-		if($settings['css']['BMI']['includeInFooter']==1){
-			$GLOBALS['TSFE']->additionalFooterData['BMICSS'] = $additionalDataCSS;
-		}else{
-			$GLOBALS['TSFE']->additionalHeaderData['BMICSS'] = $additionalDataCSS;	
+			if($settings['uri']['javascript']['jQuery']['includeInFooter']==1){
+				$GLOBALS['TSFE']->additionalFooterData['BMI.jQueryLib'] = $jQueryLib;
+			}else{
+				$GLOBALS['TSFE']->additionalHeaderData['BMI.jQueryLib'] = $jQueryLib;	
+			}
+		}
+
+		if(!empty($settings['uri']['javascript']['BMI']['path'])){
+			
+			$additionalDataJS = '<script src="'.$settings['uri']['javascript']['BMI']['path'].'" type="text/javascript"></script>';
+
+			if($settings['uri']['javascript']['BMI']['includeInFooter']==1){
+				$GLOBALS['TSFE']->additionalFooterData['BMIJS'] = $additionalDataJS;
+			}else{
+				$GLOBALS['TSFE']->additionalHeaderData['BMIJS'] = $additionalDataJS;	
+			}
+		}
+
+		if(!empty($settings['uri']['css']['BMI']['path'])){
+			
+			$additionalDataCSS = '<link rel="stylesheet" href="'.$settings['uri']['css']['BMI']['path'].'" type="text/css" media="all" />';
+
+			if($settings['uri']['css']['BMI']['includeInFooter']==1){
+				$GLOBALS['TSFE']->additionalFooterData['BMICSS'] = $additionalDataCSS;
+			}else{
+				$GLOBALS['TSFE']->additionalHeaderData['BMICSS'] = $additionalDataCSS;	
+			}
 		}
 	}
 	
