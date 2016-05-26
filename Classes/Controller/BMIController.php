@@ -61,6 +61,10 @@ class BMIController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
 
 		$template	= 1;
 
+		$this->contentObj = $this->configurationManager->getContentObject();
+
+		$this->settings['contentID'] = md5($this->contentObj->data['uid']);
+		
 		$result		= array('value' => array("height" => "", "weight" => ""));
 
 		$this->settings['fullURL'] = GeneralUtility::getIndpEnv('TYPO3_SITE_URL');
@@ -73,7 +77,9 @@ class BMIController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
 
 			$post = $this->request->getArguments();
 
-			$result = $this->bMIService->getBMICalculation($post,$this->settings);
+			if($this->settings['contentID'] ==$post['content']){
+				$result = $this->bMIService->getBMICalculation($post,$this->settings);
+			}
 		}
 
 		$this->view->assign('template', $template);
