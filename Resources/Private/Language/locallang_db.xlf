@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2015-12-31T17:02:05Z" product-name="js_bmi_calculator">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-12-31T16:59:22Z" product-name="js_bmi_calculator">
 		<header/>
 		<body>
 			<trans-unit id="tx_jsbmicalculator_domain_model_bmi">
