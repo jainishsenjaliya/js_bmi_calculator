@@ -6,6 +6,11 @@
 			<trans-unit id="tx_jsbmicalculator_domain_model_bmi">
 				<source>BMI Calculator</source>
 			</trans-unit>
+
+			<trans-unit id="pages.doktype">
+				<source>BMI Calculator</source>
+			</trans-unit>
+
 			<trans-unit id="tx_jsbmicalculator_domain_model_bmi.error.">
 				<source>Something missing while configuration</source>
 			</trans-unit>
