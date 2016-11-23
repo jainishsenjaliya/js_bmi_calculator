@@ -1,0 +1,14 @@
+{
+  "name": "jainishsenjaliya/js-bmi-calculator",
+  "description": "The body mass index (BMI) or Quetelet index is a value derived from the mass (weight) and height of an individual.",
+  "type": "typo3-cms-extension",
+  "keywords": ["TYPO3 CMS", "BMI Calculator"],
+  "homepage": "https://github.com/jainishsenjaliya/js_bmi_calculator",
+  "version": "3.2.0",
+  "support": {
+    "issues": "https://github.com/jainishsenjaliya/js_bmi_calculator/issues"
+  },
+  "require": {
+      "typo3/cms": "6.0.0 - 8.9.99"
+  }
+}

@@ -10,8 +10,8 @@
 conf.py:
   copyright: 2016
   project: BMI Calculator
-  version: 2.0.3
-  release: 2.0.3
+  version: 3.2.0
+  release: 3.2.0
   intersphinx_mapping:
     t3tsref:
     - http://docs.typo3.org/typo3cms/TyposcriptReference/
